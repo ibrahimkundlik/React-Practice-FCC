@@ -1,0 +1,41 @@
+$primary: #031f3a;
+$secondary: #79d8a4;
+$ternary: #d9fff0;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
+}
+body {
+	text-align: center;
+	min-height: 100vh;
+	padding: 1.5rem;
+	background-color: $ternary;
+	color: $primary;
+}
+li {
+	list-style: none;
+}
+button {
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	outline: none;
+	border: 1px solid $primary;
+	padding: 0.5rem;
+	border-radius: 0.3rem;
+	background-color: $secondary;
+	cursor: pointer;
+	transition: all ease-in-out 0.3s;
+	min-width: 3rem;
+
+	&:hover {
+		transform: scale(1.1);
+		background-color: #00bb54;
+	}
+}

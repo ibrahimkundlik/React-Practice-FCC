@@ -1,0 +1,51 @@
+.main {
+	padding: 1rem;
+	margin: 1rem auto;
+	border: 1px solid goldenrod;
+	max-width: 600px;
+	> * {
+		margin: 1rem;
+	}
+}
+
+.users-cont {
+	max-width: 1000px;
+	padding: 1rem;
+	margin: 1rem auto;
+	border: 1px solid goldenrod;
+	> * {
+		margin: 1rem;
+	}
+}
+
+.users {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	.user {
+		width: 45%;
+		min-width: 300px;
+		max-width: 350px;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 1rem;
+		margin: 1rem;
+		background-color: #79d8a4;
+		border-radius: 0.5rem;
+		h3 {
+			margin-left: 1.5rem;
+		}
+	}
+}
+
+.avatar-cont {
+	width: 20%;
+	img {
+		width: 100%;
+		display: block;
+		border-radius: 50%;
+	}
+}

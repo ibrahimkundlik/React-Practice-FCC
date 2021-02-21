@@ -1,0 +1,39 @@
+$primary: #031f3a;
+$secondary: #79d8a4;
+$ternary: #d9fff0;
+
+.main-cont {
+	h1 {
+		margin-bottom: 1rem;
+	}
+}
+.booklist {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.book {
+	width: 31%;
+	padding: 1rem;
+	margin: 0.5rem;
+	background-color: $secondary;
+	border: 1px solid $primary;
+	border-radius: 0.5rem;
+	align-self: stretch;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 290px;
+	min-width: 235px;
+
+	h3 {
+		margin: 0.5rem 0;
+	}
+
+	img {
+		width: 100px;
+		height: 150px;
+	}
+}
