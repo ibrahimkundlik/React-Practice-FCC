@@ -21,7 +21,8 @@ body {
 li {
 	list-style: none;
 }
-button {
+button,
+.toggle-cont a {
 	font-family: "Open Sans", "Helvetica Neue", sans-serif;
 	font-size: 14px;
 	font-weight: bold;
@@ -38,4 +39,12 @@ button {
 		transform: scale(1.1);
 		background-color: #00bb54;
 	}
+}
+.toggle-cont {
+	width: 100%;
+	max-width: 600px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	margin: 2rem auto;
 }

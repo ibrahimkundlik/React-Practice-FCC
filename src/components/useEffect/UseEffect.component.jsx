@@ -29,7 +29,11 @@ const UseEffect = () => {
 		fetch("https://api.github.com/users")
 			.then((response) => response.json())
 			.then((data) => {
-				setUsers(data);
+				if (data.message) {
+					setUsers("API Error: " + data.message);
+				} else {
+					setUsers(data);
+				}
 			})
 			.catch((error) => {
 				setUsers(error.message);

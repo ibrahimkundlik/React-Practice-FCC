@@ -23,7 +23,7 @@ function UseState() {
 	// eg2
 	const [people, setPeople] = useState(data);
 	const handlePeople = (del) => {
-		const filtered = people.filter(({ id }) => id != del);
+		const filtered = people.filter(({ id }) => id !== del);
 		setPeople(filtered);
 	};
 
